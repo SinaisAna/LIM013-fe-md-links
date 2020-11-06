@@ -6,9 +6,8 @@
   "type": "module",
   "bin": "src/index.js",
   "directories": {
-      "test": "test"
+    "test": "test"
   },
-
   "scripts": {
     "test": "jest --verbose --coverage",
     "build": "babel src --out-dir lib"
@@ -24,10 +23,6 @@
       "./setupJest.js"
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SinaisAna/LIM013-fe-md-links.git"
-},
   "devDependencies": {
     "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
