@@ -4,33 +4,42 @@
   "description": "libreria mdlinks",
   "main": "index.js",
   "type": "module",
-  "bin": "src/index.js",
-  "directories": {
-      "test": "test"
+  "bin": {
+    "md-links": "lib/cli.js"
   },
-
+  "engines": {
+    "node": "*"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "jest": {
+    "verbose": true
+  },
   "scripts": {
+    "eslint": "eslint --ext .js lib/ test/",
+    "pretest": "npm run eslint",
     "test": "jest --verbose --coverage",
-    "build": "babel src --out-dir lib"
+    "build": "babel src -d lib"
   },
   "author": "alex",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/SinaisAna/LIM013-fe-md-links/issues"
   },
-  "jest": {
-    "automock": false,
-    "setupFiles": [
-      "./setupJest.js"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SinaisAna/LIM013-fe-md-links.git"
-},
+  },
+  "keywords": [
+    "mdlinks",
+    "link",
+    "md"
+  ],
   "devDependencies": {
     "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
+    "babel-cli": "^6.26.0",
     "babel-plugin-transform-es2015-arrow-functions": "^6.22.0",
     "eslint": "^7.12.1",
     "eslint-plugin-react": "^7.21.5",
@@ -41,14 +50,15 @@
   },
   "dependencies": {
     "@babel/preset-env": "^7.12.1",
-    "babel": "^6.23.0",
     "babel-jest": "^26.6.3",
     "babel-preset-env": "^1.7.0",
     "chalk": "^4.1.0",
+    "colorette": "^1.2.1",
     "commander": "^6.2.0",
     "eslint-config-airbnb": "^18.2.0",
     "express": "^4.17.1",
     "fetch-mock": "^9.10.7",
+    "isomorphic-fetch": "^3.0.0",
     "jsdom": "^16.4.0",
     "marked": "^1.2.3",
     "node-fetch": "^2.6.1"

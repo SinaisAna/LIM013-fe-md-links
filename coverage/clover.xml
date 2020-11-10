@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1605043972167" clover="3.2.0">
+  <project timestamp="1605043972168" name="All files">
+    <metrics statements="35" coveredstatements="8" conditionals="6" coveredconditionals="2" methods="11" coveredmethods="2" elements="52" coveredelements="12" complexity="0" loc="35" ncloc="35" packages="1" files="1" classes="1"/>
+    <file name="index.js" path="C:\Users\Esau Ocrospoma\Desktop\md-links\LIM013-fe-md-links\lib\index.js">
+      <metrics statements="35" coveredstatements="8" conditionals="6" coveredconditionals="2" methods="11" coveredmethods="2"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="13" count="2" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="17" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="21" count="1" type="stmt"/>
+      <line num="22" count="0" type="stmt"/>
+      <line num="23" count="0" type="stmt"/>
+      <line num="25" count="0" type="stmt"/>
+      <line num="26" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="27" count="0" type="stmt"/>
+      <line num="30" count="0" type="stmt"/>
+      <line num="34" count="0" type="stmt"/>
+      <line num="35" count="0" type="stmt"/>
+      <line num="36" count="0" type="stmt"/>
+      <line num="38" count="0" type="stmt"/>
+      <line num="39" count="0" type="stmt"/>
+      <line num="40" count="0" type="stmt"/>
+      <line num="43" count="0" type="stmt"/>
+      <line num="47" count="1" type="stmt"/>
+      <line num="48" count="0" type="stmt"/>
+      <line num="49" count="0" type="stmt"/>
+      <line num="50" count="0" type="stmt"/>
+      <line num="51" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="53" count="0" type="stmt"/>
+      <line num="54" count="0" type="stmt"/>
+      <line num="59" count="1" type="stmt"/>
+      <line num="60" count="0" type="stmt"/>
+      <line num="61" count="0" type="stmt"/>
+      <line num="63" count="0" type="stmt"/>
+      <line num="67" count="0" type="stmt"/>
+      <line num="68" count="0" type="stmt"/>
+      <line num="69" count="0" type="stmt"/>
+      <line num="70" count="0" type="stmt"/>
+      <line num="77" count="0" type="stmt"/>
+    </file>
+  </project>
+</coverage>
