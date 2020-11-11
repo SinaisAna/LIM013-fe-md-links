@@ -26,21 +26,21 @@ describe('Archivo o directorio, extrae .md, busca links', () => {
   })
   
 	it('Tiene que retornar un array con objetos que contengan info de las URL', () => {
-		expect(f_mdlinks.findLinks(['C:/Users/Esau Ocrospoma/Desktop/md-links/LIM013-fe-md-links/test/archivo_prueba1/archivo_prueba2/archivo3.md'])).toStrictEqual([
+		expect(funcionesMdLinks.findLinks(['C:/Users/Esau Ocrospoma/Desktop/md-links/LIM013-fe-md-links/test/archivo_prueba/archivo_prueba2/archivo3.md'])).toStrictEqual([
 			{
-				href: "https://developers.google.com/v8/",
-				text: 'motor de JavaScript V8 de Chrome',
-				link: 'C:/Users/cifer/Desktop/LIM012-fe-md-links/tests/archives_test/archivesmd/archive2.md'
+				href: "https://babeljs.io/docs/en/babel-node.html",
+				text: '@ babel / node',
+				link: 'C:/Users/Esau Ocrospoma/Desktop/md-links/LIM013-fe-md-links/test/archivo_prueba/archivo_prueba2/archivo3.md'
 			}
 		]);
 	})
 
 	test('Tiene que retornar un array con todos las rutas de solo archivos', () => {
-		expect(f_mdlinks.archiveOrDirectory('C:/Users/cifer/Desktop/LIM012-fe-md-links/tests/archives_test/archive1.md')).toStrictEqual(['C:/Users/cifer/Desktop/LIM012-fe-md-links/tests/archives_test/archive1.md']);
+		expect(funcionesMdLinks.archivosDirectorios('C:/Users/Esau Ocrospoma/Desktop/md-links/LIM013-fe-md-links/test/archivo_prueba/archivo1.md')).toStrictEqual(['C:/Users/Esau Ocrospoma/Desktop/md-links/LIM013-fe-md-links/test/archivo_prueba/archivo1.md']);
 	});
 
 	test('Tiene que retornar un array con todos las rutas de solo archivos', () => {
-		expect(f_mdlinks.archiveOrDirectory('tests/archives_test/archivesmd/multiple/last')).toStrictEqual(
-			["tests\\archives_test\\archivesmd\\multiple\\last\\archive9.md"]);
+		expect(funcionesMdLinks.archivosDirectorios('test/archivo_prueba/archivo_prueba2/archivo_prueba3/ultimo_archivo')).toStrictEqual(
+			["test\\archivo_prueba\\archivo_prueba2\\archivo_prueba3\\ultimo_archivo\\archivo6.md"]);
 	});
 })
