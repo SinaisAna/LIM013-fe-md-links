@@ -2,7 +2,7 @@
   "name": "alex-md-links",
   "version": "1.0.0",
   "description": "libreria mdlinks",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "type": "module",
   "bin": {
     "md-links": "lib/cli.js"
