@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">82.05% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>39/39</span>
+                <span class='fraction'>32/39</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">83.33% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>5/6</span>
+                <span class='fraction'>3/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">81.82% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>11/11</span>
+                <span class='fraction'>9/11</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">80% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>35/35</span>
+                <span class='fraction'>28/35</span>
             </div>
         
             
@@ -136,7 +136,8 @@
 <a name='L77'></a><a href='#L77'>77</a>
 <a name='L78'></a><a href='#L78'>78</a>
 <a name='L79'></a><a href='#L79'>79</a>
-<a name='L80'></a><a href='#L80'>80</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -153,19 +154,6 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -179,7 +167,20 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -192,6 +193,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -232,7 +234,7 @@ export const exists = (archivo) =&gt; (fs.existsSync(archivo));
 console.log(exists(archivoFile));
 &nbsp;
 // VERIFICA SI LA RUTA ES ABSOLUTA - RETORNA TRUE/FALSE
- export const verificateAbsolute = (verifica) =&gt; path.isAbsolute(verifica) ? verifica : path.resolve(verifica);
+ export const verificateAbsolute = (verifica) =&gt; path.isAbsolute(verifica) ? verifica : <span class="branch-1 cbranch-no" title="branch not covered" >path.resolve(verifica);</span>
 &nbsp;
  
 //  VERIFICA SI ES UN ARCHIVO O UN DIRECTORIO - RETORNA ARRAY CON RUTAS 
@@ -241,21 +243,21 @@ export const archivosDirectorios = (pathTomado) =&gt; {
 	const EsArchivo = rutasDeEstadicticas.isFile();
 	// Devuelve verdadero si el objeto describe un archivo normal
 	let todosLosArchivos = [];
-	if (EsArchivo) {
+	<span class="missing-if-branch" title="else path not taken" >E</span>if (EsArchivo) {
 		todosLosArchivos.push(pathTomado);
 	} else {
 		//Lee el directorio
-		const leerDirectorio = fs.readdirSync(pathTomado);
+		const leerDirectorio = <span class="cstat-no" title="statement not covered" >fs.readdirSync(pathTomado);</span>
 		// Aqui obtengo la ruta absoluta de cada archivo y/o directorio mediante path join, uniendo la ruta
 		// de la carpeta donde estan todos mis archivos + el elemento que se esta verificando (nombreDelArchivo)
 		// porque cada elemento representa un archivo de la carpeta :)
-		const arrayDePath = leerDirectorio.map((nombreDelArchivo) =&gt; {
-			const paths = path.join(pathTomado, nombreDelArchivo);
-			return paths;
+		const arrayDePath = <span class="cstat-no" title="statement not covered" >leerDirectorio.map(<span class="fstat-no" title="function not covered" >(n</span>ombreDelArchivo) =&gt; {</span>
+			const paths = <span class="cstat-no" title="statement not covered" >path.join(pathTomado, nombreDelArchivo);</span>
+<span class="cstat-no" title="statement not covered" >			return paths;</span>
 		})
-		arrayDePath.forEach((file) =&gt; {
-			const solamentePaths = archivosDirectorios(file);
-			todosLosArchivos = todosLosArchivos.concat(solamentePaths);
+<span class="cstat-no" title="statement not covered" >		arrayDePath.forEach(<span class="fstat-no" title="function not covered" >(f</span>ile) =&gt; {</span>
+			const solamentePaths = <span class="cstat-no" title="statement not covered" >archivosDirectorios(file);</span>
+<span class="cstat-no" title="statement not covered" >			todosLosArchivos = todosLosArchivos.concat(solamentePaths);</span>
 		})
 	}
 	return todosLosArchivos;
@@ -264,15 +266,16 @@ export const archivosDirectorios = (pathTomado) =&gt; {
 // EXTRAER ARCHIVOS CON EXTENSION .MD // RETORNA ARRAY
  export const extraerMD = (archivos) =&gt; new Promise((resolve, reject) =&gt; {
 	let todoLosArchivos = [];
-	archivos.forEach((archivos) =&gt; {
-		const extensionPath = path.extname(archivos); //Extrae la extension del archivo
-		<span class="missing-if-branch" title="else path not taken" >E</span>if (extensionPath === '.md') todoLosArchivos.push(archivos); //Si cumple introduce dentro de la ruta
+	archivos.forEach((carpeta) =&gt; {
+		const extensionPath = path.extname(carpeta); //Extrae la extension del archivo
+		<span class="missing-if-branch" title="else path not taken" >E</span>if (extensionPath === '.md') todoLosArchivos.push(carpeta); //Si cumple introduce dentro de la ruta
 	})
 	// crear si exites archivos crear condición
 	resolve(todoLosArchivos);
 	reject('No se encontraron archivos con extensión .md');
 })
-&nbsp;
+//const proextraerMD = "C:\\Users\\Esau Ocrospoma\\Desktop\\md-links\\LIM013-fe-md-links\\test\\archivo_prueba\\archivo_prueba2\\archivo_prueba3\\ultimo_archivo\\ultimo_archivo_sin_extencion";
+//console.log(extraerMD(proextraerMD));
 //BUSCA LAS URL EN EL ARCHIVO .MD Y LAS GUARDA EN UN ARRAY
 &nbsp;
 export const findLinks = (archivomd) =&gt; {
@@ -301,7 +304,7 @@ export const findLinks = (archivomd) =&gt; {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Thu Nov 12 2020 12:04:58 GMT-0300 (Chile Summer Time)
+                at Thu Nov 12 2020 15:34:38 GMT-0300 (Chile Summer Time)
             </div>
         </div>
         <script src="prettify.js"></script>

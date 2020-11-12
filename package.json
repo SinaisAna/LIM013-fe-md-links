@@ -5,7 +5,7 @@
   "main": "./lib/index.js",
   "type": "module",
   "bin": {
-    "md-links": "lib/cli.js"
+    "md-links": "cli/cli.js"
   },
   "engines": {
     "node": "*"
