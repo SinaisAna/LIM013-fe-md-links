@@ -1,0 +1,1 @@
+Aquí están los documentos para [@ babel / node](https://babeljs.io/docs/en/babel-node.html) . Como dice el documento, este comando solo está destinado al desarrollo local. En producción, recomiendan una configuración.
