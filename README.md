@@ -14,6 +14,10 @@ Muchas veces los archivos markdown contienen links (vínculos) que están caído
 
 ## Diagrama de flujo (CLI) 📋
 
+<p align="center">
+    <img src="readme.img/Diagramaflujo(CLI).png" alt="Logo">
+</p>
+
 ## Guia de instalacion 💿
 
 ## Funcionamiento 🚀
