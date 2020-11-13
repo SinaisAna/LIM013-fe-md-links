@@ -1,5 +1,5 @@
 import chalk from 'chalk';
-console.log(chalk.green);
+// console.log(chalk.green);
 
 export const validateStats = (obj) => {
 	let allLinks = [];

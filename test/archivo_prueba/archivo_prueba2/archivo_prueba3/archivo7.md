@@ -1,0 +1,1 @@
+[simbologio del diagrama](https://www.google.com/sa+de+diagrama+de+flujo&oq=simbologia+de+diagra&aqs=chrome.0.0j69i57j0l6.9311j0j7&sourceid=chro-sssssdc8) prueba de la simbologia.
