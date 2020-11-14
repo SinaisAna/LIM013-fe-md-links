@@ -13,12 +13,16 @@ export const validateStats = (obj) => {
 			  `
 	console.log(texto)
   }
+
 export const validate = (obj) => {
 	let show = ""
 	obj.forEach((obj) => {
-  show += obj.link + " " + chalk.greenBright(obj.href) + " " + chalk.yellow(obj.statusText)
-		+ " " + chalk.bgYellow.bold(chalk.gray(obj.status)) + " " + chalk.blue(obj.text) + '\n';
-	})
+//  show += obj.link + " " + chalk.greenBright(obj.href) + " " + chalk.yellow(obj.statusText)
+//		+ " " + chalk.bgYellow.bold(chalk.gray(obj.status)) + " " + chalk.blue(obj.text) + '\n';
+//	})
+	show += `
+    ${chalk.greenBright(obj.href)} ${obj.status < 400 ? chalk.bgYellow.bold(chalk.gray(obj.status)) : chalk.bgRed(obj.status)} ${obj.statusText === 'OK' ? chalk.yellow(obj.statusText) : chalk.red(obj.statusText)} ${chalk.blue(obj.text)}`;
+  })
 	console.log(show)
   }
   
