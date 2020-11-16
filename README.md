@@ -17,7 +17,8 @@ Muchas veces los archivos markdown contienen links (vínculos) que están caído
 <p align="center">
     <img src="Readme.img/Diagramaflujo(CLI).jpg" alt="Logo">
 </p>
-![diagrama](readme.img/Diagramaflujo(CLI).jpg)
+
+![diagrama](Readme.img/Diagramaflujo(CLI).jpg)
 
 ## Guia de instalacion 💿
 
