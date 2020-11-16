@@ -1,5 +1,5 @@
 {
-  "name": "alex-md-links",
+  "name": "md-links",
   "version": "1.0.0",
   "description": "libreria mdlinks",
   "main": "./lib/index.js",
