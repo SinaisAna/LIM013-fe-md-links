@@ -7,7 +7,7 @@
 </p>
 
 
-## Descripción 👁‍
+## Descripción 👁‍🦓 
 Muchas veces los archivos markdown contienen links (vínculos) que están caídos y el/la autor(a) necesita revisar cual de ellos sigue en funcionamiento para no perjudicar su trabajo. Por ello este proyecto consiste en crear una herramienta para analizar que links son válidos en el archivo markdown (.md).
 
 ## Diagrama de flujo (API) 📚
