@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/SinaisAna/LIM013-fe-md-links/blob/master/README.md">
-    <img src="readme.img/iconMarkdown.jpg" alt="Logo" width="80" height="80">
+    <img src="Readme.img/iconMarkdown.jpg" alt="Logo" width="80" height="80">
   </a>
   <h1 align="center">&#60SinaisAna&#62/md-links</h1>
 </p>
@@ -15,11 +15,15 @@ Muchas veces los archivos markdown contienen links (vínculos) que están caído
 ## Diagrama de flujo (CLI) 📋
 
 <p align="center">
-    <img src="readme.img/Diagramaflujo(CLI).jpg" alt="Logo">
+    <img src="Readme.img/Diagramaflujo(CLI).jpg" alt="Logo">
 </p>
 ![diagrama](readme.img/Diagramaflujo(CLI).jpg)
 
 ## Guia de instalacion 💿
+
+npm install SinaisAna/LIM013-fe-md-links
+npm install SinaisAna/md-links
+
 
 ## Funcionamiento 🚀
 
@@ -29,5 +33,5 @@ Muchas veces los archivos markdown contienen links (vínculos) que están caído
 
 ## Objetivos de aprendizaje ✅
 <p align="center">
-    <img src="readme.img/cadena.jpg" alt="Logo" width="80" height="80">
+    <img src="Readme.img/cadena.jpg" alt="Logo" width="80" height="80">
 </p>
