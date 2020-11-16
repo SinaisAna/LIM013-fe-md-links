@@ -22,9 +22,11 @@ Muchas veces los archivos markdown contienen links (vínculos) que están caído
 
 ## Guia de instalacion 💿
 
+~~~
 npm install SinaisAna/LIM013-fe-md-links
-npm install SinaisAna/md-links
 
+npm install SinaisAna/md-links
+~~~
 
 ## Funcionamiento 🚀
 
