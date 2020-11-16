@@ -36,27 +36,27 @@ npm install SinaisAna/md-links
 md-links ruta/a/analizar
 ~~~
 Ejemplo: 
-![diagrama](Readme.img/testeo.jpg)
+![diagrama](Readme.img/testeo.JPG)
 ✔ **Validar los links encontrados**
 ~~~
 md-links ruta/a/analizar --validate
 ~~~
 Ejemplo:
-![diagrama](Readme.img/testeoValidate.jpg)
+![diagrama](Readme.img/testeoValidate.JPG)
 
 ✔ **Obtener total de links y links unicos**
 ~~~
 md-links ruta/a/analizar --stats
 ~~~
 Ejemplo:
-![diagrama](Readme.img/testeoStast.jpg)
+![diagrama](Readme.img/testeoStast.JPG)
 
 ✔ **Obtener total de links, links unicos y rotos**
 ~~~
 md-links ruta/a/analizar --stats --validate
 ~~~
 Ejemplo:
-![diagrama](Readme.img/testeoValidateStats.jpg)
+![diagrama](Readme.img/testeoValidateStats.JPG)
 
 
 **igualmente colocando** `--validate --stats`
@@ -69,19 +69,22 @@ md-links ruta/a/analizar --validate --stats
 md-links ruta/a/analizar --help
 ~~~
 Ejemplo:
-![diagrama](Readme.img/testeoHelp.jpg)
+![diagrama](Readme.img/testeoHelp.JPG)
 
 ## Errores comunes ⚠ 📣
 
 ☑ **Ruta invalida**
 
-![diagrama](Readme.img/rutaInvalida.jpg)
+![diagrama](Readme.img/rutaInvalida.JPG)
+
 ☑ **Opcion invalida**
 
-![diagrama](Readme.img/opcioninvalida.jpg)
+![diagrama](Readme.img/opcioninvalida.JPG)
+
 ☑ **Opciones no estipuladas**
 
-![diagrama](Readme.img/opciondemas.jpg)
+![diagrama](Readme.img/opciondemas.JPG)
+
 ## Objetivos de aprendizaje ✅
 
 ### Javascript
