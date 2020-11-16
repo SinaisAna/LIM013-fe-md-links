@@ -56,7 +56,7 @@ if (arrOfTerminal.length < 6) {
       .catch((err) => console.log(err));
     
   } else {
-    console.log(help, chalk.bgRedBright('FAIL:') + chalk.yellow(' --> ') + chalk.yellowBright.underline('Verificar opciones introducidas'))
+    console.log(chalk.bgRedBright('FAIL:') + chalk.yellow(' --> ') + chalk.yellowBright.underline('Verificar opciones introducidas'),help)
   }
 } else {
   console.log(chalk.bgRedBright('FAIL:') + chalk.yellow(' --> ') + chalk.yellowBright.underline('Has colocado opciones de mas'))

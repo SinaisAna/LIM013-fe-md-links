@@ -40,7 +40,7 @@ export const stats = (obj) => {
 export  const onlyPath = (obj) => {
 	let show = ""
 	obj.forEach((obj) => {
-  show += obj.link + " " + chalk.greenBright(obj.href) + " " + chalk.blue(obj.text) + '\n';
+  show += (obj.link).slice(0, 40) + " " + chalk.greenBright(obj.href) + " " + chalk.blue(obj.text) + '\n';
 	})
 	console.log(show)
   }
