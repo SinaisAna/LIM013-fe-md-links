@@ -36,7 +36,7 @@ export const stats = (obj) => {
 			  `
 	console.log(texto)
   }
-  
+
 export  const onlyPath = (obj) => {
 	let show = ""
 	obj.forEach((obj) => {
