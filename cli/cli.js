@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 /* eslint-disable no-undef */
-import { mdLinks } from '../lib/librari.js';
 import chalk from 'chalk';
-import {validateStats, validate, stats, onlyPath } from './cli-opciones.js';
+import { mdLinks } from '../lib/librari.js';
+import {
+  validateStats, validate, stats, onlyPath,
+} from './cli-opciones.js';
 
 const help = chalk.white`
 Md-links es una biblioteca que analiza y encuentra enlaces en archivos Markdown.\n`
@@ -25,40 +27,38 @@ const option1 = process.argv[3];
 const option2 = process.argv[4];
 const arrOfTerminal = process.argv;
 
-
 if (arrOfTerminal.length < 6) {
-  if ((path && option1 === '--validate' && option2 === '--stats')|| (option1 === '--stats' && option2 === '--validate')) {
+  if ((path && option1 === '--validate' && option2 === '--stats') || (option1 === '--stats' && option2 === '--validate')) {
     mdLinks(path, { validate: true })
       .then((obj) => {
-        validateStats(obj)
-      })
+        validateStats(obj);
+      });
   } else if (path && option1 === '--validate' && !option2) {
     mdLinks(path, { validate: true })
       .then((obj) => {
-        validate(obj)
+        validate(obj);
       })
       .catch((err) => console.log(err));
   } else if (path && option1 === '--stats' && !option2) {
     mdLinks(path)
       .then((obj) => {
-        stats(obj)
-      })
+        const result = stats(obj);
+        console.log(result);
+      });
   } else if (path && !option1 && !option2) {
     mdLinks(path)
       .then((obj) => {
-        onlyPath(obj)
-      })
-    } else if (path && option1 === 'help'){
-      mdLinks(path)
+        onlyPath(obj);
+      });
+  } else if (path && option1 === 'help') {
+    mdLinks(path)
       .then((obj) => {
-        help(obj)
+        help(obj);
       })
       .catch((err) => console.log(err));
-    
   } else {
-    console.log(chalk.bgRedBright('FAIL:') + chalk.yellow(' --> ') + chalk.yellowBright.underline('Verificar opciones introducidas'),help)
+    console.log(chalk.bgRedBright('FAIL:') + chalk.yellow(' --> ') + chalk.yellowBright.underline('Verificar opciones introducidas'), help);
   }
 } else {
-  console.log(chalk.bgRedBright('FAIL:') + chalk.yellow(' --> ') + chalk.yellowBright.underline('Has colocado opciones de mas'))
+  console.log(chalk.bgRedBright('FAIL:') + chalk.yellow(' --> ') + chalk.yellowBright.underline('Has colocado opciones de mas'));
 }
-

@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">39.29% </span>
+                <span class="strong">29.17% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>11/28</span>
+                <span class='fraction'>7/24</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">30% </span>
+                <span class="strong">22.22% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>3/10</span>
+                <span class='fraction'>2/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">39.13% </span>
+                <span class="strong">30% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>9/23</span>
+                <span class='fraction'>6/20</span>
             </div>
         
             
@@ -103,98 +103,101 @@
 <a name='L44'></a><a href='#L44'>44</a>
 <a name='L45'></a><a href='#L45'>45</a>
 <a name='L46'></a><a href='#L46'>46</a>
-<a name='L47'></a><a href='#L47'>47</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import chalk from 'chalk';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* eslint-disable no-useless-concat */
+/* eslint-disable no-console */
+/* eslint-disable no-tabs */
+/* eslint-disable eqeqeq */
+/* eslint-disable max-len */
+import chalk from 'chalk';
 // console.log(chalk.green);
 &nbsp;
 export const validateStats = <span class="fstat-no" title="function not covered" >(o</span>bj) =&gt; {
-	let allLinks = <span class="cstat-no" title="statement not covered" >[];</span>
-	let broken = <span class="cstat-no" title="statement not covered" >0;</span>
-<span class="cstat-no" title="statement not covered" >	obj.forEach(<span class="fstat-no" title="function not covered" >(l</span>ink) =&gt; { <span class="cstat-no" title="statement not covered" >allLinks.push(link.href); <span class="cstat-no" title="statement not covered" ></span>link.status != 200 ? broken += 1 : broken += 0 </span>})</span>
-	const uniqueLinks = <span class="cstat-no" title="statement not covered" >allLinks.filter(<span class="fstat-no" title="function not covered" >(e</span>lem, index) =&gt; <span class="cstat-no" title="statement not covered" >allLinks.indexOf(elem) === index)</span></span>
-	const texto = <span class="cstat-no" title="statement not covered" >`</span>
-	${chalk.green("Total =" + " " + allLinks.length)}
-	${chalk.blue("Unique =" + " " + uniqueLinks.length)}
-	${chalk.yellow("Broken =" + " " + broken)}
-			  `
-<span class="cstat-no" title="statement not covered" >	console.log(texto)</span>
-  }
+  const allLinks = <span class="cstat-no" title="statement not covered" >[];</span>
+  let broken = <span class="cstat-no" title="statement not covered" >0;</span>
+  // eslint-disable-next-line no-unused-expressions
+<span class="cstat-no" title="statement not covered" >  obj.forEach(<span class="fstat-no" title="function not covered" >(l</span>ink) =&gt; { <span class="cstat-no" title="statement not covered" >allLinks.push(link.href); <span class="cstat-no" title="statement not covered" ></span>link.status != 200 ? broken += 1 : broken += 0; </span>});</span>
+  const uniqueLinks = <span class="cstat-no" title="statement not covered" >allLinks.filter(<span class="fstat-no" title="function not covered" >(e</span>lem, index) =&gt; <span class="cstat-no" title="statement not covered" >allLinks.indexOf(elem) === index)</span>;</span>
+  const texto = <span class="cstat-no" title="statement not covered" >`</span>
+	${chalk.green(`${'Total =' + ' '}${allLinks.length}`)}
+	${chalk.blue(`${'Unique =' + ' '}${uniqueLinks.length}`)}
+	${chalk.yellow(`${'Broken =' + ' '}${broken}`)}
+			  `;
+<span class="cstat-no" title="statement not covered" >  console.log(texto);</span>
+};
 &nbsp;
 export const validate = <span class="fstat-no" title="function not covered" >(o</span>bj) =&gt; {
-	let show = <span class="cstat-no" title="statement not covered" >""</span>
-<span class="cstat-no" title="statement not covered" >	obj.forEach(<span class="fstat-no" title="function not covered" >(o</span>bj) =&gt; {</span>
-//  show += obj.link + " " + chalk.greenBright(obj.href) + " " + chalk.yellow(obj.statusText)
-//		+ " " + chalk.bgYellow.bold(chalk.gray(obj.status)) + " " + chalk.blue(obj.text) + '\n';
-//	})
-<span class="cstat-no" title="statement not covered" >	show += `</span>
+  let show = <span class="cstat-no" title="statement not covered" >'';</span>
+  // eslint-disable-next-line no-shadow
+<span class="cstat-no" title="statement not covered" >  obj.forEach(<span class="fstat-no" title="function not covered" >(o</span>bj) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    show += `</span>
     ${chalk.greenBright(obj.href)} ${obj.status &lt; 400 ? chalk.bgYellow.bold(chalk.gray(obj.status)) : chalk.bgRed(obj.status)} ${obj.statusText === 'OK' ? chalk.yellow(obj.statusText) : chalk.red(obj.statusText)} ${chalk.blue(obj.text)}`;
-  })
-<span class="cstat-no" title="statement not covered" >	console.log(show)</span>
-  }
-  
-export const stats = (obj) =&gt; {
-	let links = [];
-	obj.forEach((link) =&gt; links.push(link.href))
-	const uniqueLinks = links.filter((elem, index) =&gt; links.indexOf(elem) === index)
-	const texto = `
-	${chalk.green("Total =" + " " + links.length)}
-	${chalk.blue("Unique =" + " " + uniqueLinks.length)}
-			  `
-	console.log(texto)
-  }
+  });
+<span class="cstat-no" title="statement not covered" >  console.log(show);</span>
+};
 &nbsp;
-export  const onlyPath = <span class="fstat-no" title="function not covered" >(o</span>bj) =&gt; {
-	let show = <span class="cstat-no" title="statement not covered" >""</span>
-<span class="cstat-no" title="statement not covered" >	obj.forEach(<span class="fstat-no" title="function not covered" >(o</span>bj) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  show += (obj.link).slice(0, 40) + " " + chalk.greenBright(obj.href) + " " + chalk.blue(obj.text) + '\n';</span>
-	})
-<span class="cstat-no" title="statement not covered" >	console.log(show)</span>
-  }
+export const stats = (links) =&gt; {
+  const uniqueLinks = new Set(links.filter((element) =&gt; element.href));
+  return (`
+	${chalk.green(`${'Total =' + ' '}${links.length}`)}
+	${chalk.blue(`${'Unique =' + ' '}${uniqueLinks.size}`)}`);
+};
+&nbsp;
+export const onlyPath = <span class="fstat-no" title="function not covered" >(o</span>bj) =&gt; {
+  let show = <span class="cstat-no" title="statement not covered" >'';</span>
+  // eslint-disable-next-line no-shadow
+<span class="cstat-no" title="statement not covered" >  obj.forEach(<span class="fstat-no" title="function not covered" >(o</span>bj) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    show += `${(obj.link).slice(0, 40)} ${chalk.greenBright(obj.href)} ${chalk.blue(obj.text)}\n`;</span>
+  });
+<span class="cstat-no" title="statement not covered" >  console.log(show);</span>
+};
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -202,7 +205,7 @@ export  const onlyPath = <span class="fstat-no" title="function not covered" >(o
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Wed Nov 18 2020 22:41:49 GMT-0300 (Chile Summer Time)
+                at Thu Nov 19 2020 14:46:38 GMT-0500 (Colombia Standard Time)
             </div>
         </div>
         <script src="../prettify.js"></script>
